@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Escape Room 🧩</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Escape Room</h1>
+    <p>Resolva todos os enigmas para escapar da sala misteriosa!</p>
+
+    <div class="botoes">
+      <button onclick="mostrarPergunta('quadro')">🖼️ Quadro</button>
+      <button onclick="mostrarPergunta('caixa')">📦 Caixa</button>
+      <button onclick="mostrarPergunta('livro')">📖 Livro</button>
+      <button onclick="mostrarPergunta('janela')">🪟 Janela</button>
+      <button onclick="mostrarPergunta('armario')">🚪 Armário</button>
+      <button onclick="verificarSaida()">🚪 Tentar Sair</button>
+    </div>
+
+    <div class="pergunta" id="perguntaBox" style="display:none;">
+      <p id="perguntaTexto"></p>
+      <input type="text" id="resposta" placeholder="Digite sua resposta aqui...">
+      <button onclick="verificarResposta()">Enviar</button>
+    </div>
+
+    <p id="mensagem"></p>
+    <p id="contador">Enigmas resolvidos: 0 / 5 ✅</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.botoes button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #3a3a5a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background-color: #57577d;
+}
+
+.pergunta {
+  margin-top: 20px;
+}
+
+#resposta {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 400px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+#mensagem {
+  margin-top: 20px;
+  font-size: 18px;
+  white-space: pre-line;
+}
